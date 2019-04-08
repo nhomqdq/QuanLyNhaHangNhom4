@@ -36,7 +36,7 @@
 				<div class="container">
 						<div class="row justify-content-center">
 								<div id="logo">
-									<a href="Khachhang.html"><img src="img/logo.png" alt="" title="" /></a>
+									<a href="Kho.php"><img src="img/logo.png" alt="" title="" /></a>
 								</div>
 						</div>			  					
 				</div>
@@ -45,14 +45,14 @@
 				<div class="row align-items-center justify-content-center d-flex">			
 						<nav id="nav-menu-container">
 							<ul class="nav-menu">
-								<li><a href="Trangchu.html">Home</a></li>
-								<li><a href="Thucdon.html">Thực Đơn</a></li>
-								<li><a href="NhanVien.html">Nhân Viên</a></li>
-								<li><a href="Khachhang.html">Khách Hàng</a></li>
-								<li class="Kho"><a href="Kho.html">Kho</a>
+								<li><a href="Trangchu.php">Home</a></li>
+								<li><a href="Thucdon.php">Thực Đơn</a></li>
+								<li><a href="NhanVien.php">Nhân Viên</a></li>
+							
+								<li class="menu-has-children"><a href="">Kho</a>
 									<ul>
-										<li><a href="Nhapkho.html">Nhập Kho</a></li>
-										<li><a href="XuatKho.html">Xuất Kho</a></li>
+										<li><a href="blog-home.php">Nhập Kho</a></li>
+										<li><a href="blog-single.php">Xuất Kho</a></li>
 									</ul>
 								</li>	
 								<li class="menu-has-children"><a href="">Quản Lý Bàn</a>
@@ -63,7 +63,7 @@
 																								 
 									</ul>
 								</li>					          					          		          
-								<li><a href="Hoadon.html">Hóa Đơn</a></li>
+								<li><a href="Hoadon.php">Hóa Đơn</a></li>
 							</ul>
 						</nav><!-- #nav-menu-container -->					      		  
 				</div>
@@ -79,11 +79,10 @@
 						<h1 class="text-white">
 							Menus				
 						</h1>	
-						<p class="text-white link-nav"><a href="Trangchu.html"></a>Home </a> <a href="NhanVien.html">Nhân Viên </a> <a href="Thucdon.html">Thực Đơn </a> <span class="lnr lnr-arrow-right"></span>  <a href="Khachhang.html"> Khách Hàng</a></p>
+						<p class="text-white link-nav"><a href="Trangchu.php"></a>Home </a> <a href="NhanVien.php">Nhân Viên </a> <a href="Thucdon.php">Thực Đơn </a> <span class="lnr lnr-arrow-right"></span>  <a href="Kho.php"> Kho</a></p>
 					</div>	
 				</div>
 			</div>
-	
 			<footer class="footer-area">
 				<div class="footer-widget-wrap">
 					<div class="container">

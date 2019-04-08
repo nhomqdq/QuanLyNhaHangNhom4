@@ -1,89 +1,90 @@
-<!DOCTYPE html>
-<html lang="zxx" class="no-js">
-<head>
-	<!-- Mobile Specific Meta -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Favicon-->
-	<link rel="shortcut icon" href="img/fav.png">
-	<!-- Author Meta -->
-	<meta name="author" content="colorlib">
-	<!-- Meta Description -->
-	<meta name="description" content="">
-	<!-- Meta Keyword -->
-	<meta name="keywords" content="">
-	<!-- meta character set -->
-	<meta charset="UTF-8">
-	<!-- Site Title -->
-	<title>Macro</title>
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Macro</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-		<!--
-		CSS
-		============================================= -->
-		<link rel="stylesheet" href="css/linearicons.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/magnific-popup.css">
-		<link rel="stylesheet" href="css/jquery-ui.css">				
-		<link rel="stylesheet" href="css/nice-select.css">							
-		<link rel="stylesheet" href="css/animate.min.css">
-		<link rel="stylesheet" href="css/owl.carousel.css">				
-		<link rel="stylesheet" href="css/main.css">
-	</head>
-	<body>	
-		<header id="header">
-			<div class="header-top">
-				<div class="container">
-						<div class="row justify-content-center">
-								<div id="logo">
-									<a href="Quanlyban.html"><img src="img/logo.png" alt="" title="" /></a>
-								</div>
-						</div>			  					
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">				
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">				
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+		<body>	
+			<header id="header">
+				<div class="header-top">
+					<div class="container">
+				  		<div class="row justify-content-center">
+						      <div id="logo">
+						        <a href="Hoadon.php"><img src="img/logo.png" alt="" title="" /></a>
+						      </div>
+				  		</div>			  					
+					</div>
 				</div>
-			</div>
-			<div class="container main-menu">
-				<div class="row align-items-center justify-content-center d-flex">			
-						<nav id="nav-menu-container">
-							<ul class="nav-menu">
-								<li><a href="Trangchu.html">Home</a></li>
-								<li><a href="Thucdon.html">Thực Đơn</a></li>
-								<li><a href="NhanVien.html">Nhân Viên</a></li>
-								<li><a href="Khachhang.html">Khách Hàng</a></li>
-								<li class="menu-has-children"><a href="">Kho</a>
-									<ul>
-										<li><a href="blog-home.html">Nhập Kho</a></li>
-										<li><a href="blog-single.html">Xuất Kho</a></li>
-									</ul>
-								</li>	
-								<li class="Quanlyban"><a href="Quanlyban.html">Quản Lý Bàn</a>
-									<ul>
-												<li><a href="#">Order</a></li>
-												<li><a href="#">Đặt Bàn</a></li>
-												<li><a href="#">Tình Trạng</a></li>
-																								 
-									</ul>
-								</li>					          					          		          
-								<li><a href="Hoadon.html">Hóa Đơn</a></li>
-							</ul>
-						</nav><!-- #nav-menu-container -->					      		  
+				<div class="container main-menu">
+					<div class="row align-items-center justify-content-center d-flex">			
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li><a href="Trangchu.php">Home</a></li>
+				          <li><a href="Thucdon.php">Thực Đơn</a></li>
+				          <li><a href="NhanVien.php">Nhân Viên</a></li>
+				         
+				          <li class="Kho"><a href="Kho.php">Kho</a>
+				            <ul>
+				              <li><a href="Nhapkho.php">Nhập Kho</a></li>
+				              <li><a href="XuatKho.php">Xuất Kho</a></li>
+				            </ul>
+				          </li>	
+				          <li class="menu-has-children"><a href="">Quản Lý Bàn</a>
+				            <ul>
+											    <li><a href="#">Order</a></li>
+						              <li><a href="#">Đặt Bàn</a></li>
+						              <li><a href="#">Tình Trạng</a></li>
+						           				                		
+				            </ul>
+				          </li>					          					          		          
+				          <li><a href="Hoadon.php">Hóa Đơn</a></li>
+				        </ul>
+				      </nav><!-- #nav-menu-container -->					      		  
+					</div>
 				</div>
-			</div>
-		</header><!-- #header -->
+			</header><!-- #header -->
+	  
+			<!-- start banner Area -->
+			<section class="relative about-banner">	
+				<div class="overlay overlay-bg"></div>
+				<div class="container">				
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Hóa Đơn				
+							</h1>	
+							<p class="text-white link-nav"><a href="Trangchu.php">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="Hoadon.php"></a> Hóa Đơn</a></p>
+						</div>	
+					</div>
+				</div>
+			</section>
 		
-		<!-- start banner Area -->
-		<section class="about-banner relative">
-			<div class="overlay overlay-bg"></div>
-			<div class="container">				
-				<div class="row d-flex align-items-center justify-content-center">
-					<div class="about-content col-lg-12">
-						<h1 class="text-white">
-							Menus				
-						</h1>	
-						<p class="text-white link-nav"><a href="Trangchu.html"></a>Home </a> <a href="NhanVien.html">Nhân Viên </a> <a href="Thucdon.html">Thực Đơn </a> <span class="lnr lnr-arrow-right"></span>  <a href="Quanlyban.html"> Khos</a></p>
-					</div>	
-				</div>
-			</div>
-	
 			<footer class="footer-area">
 				<div class="footer-widget-wrap">
 					<div class="container">
@@ -173,6 +174,6 @@ EMAIL: &copy;<script>document.write(new Date().getFullYear());</script>nhahang@g
 			<script src="js/owl.carousel.min.js"></script>			
             <script src="js/isotope.pkgd.min.js"></script>								
 			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>
-	</body>
-</html>
+			<script src="js/main.js"></script>	
+		</body>
+	</html>

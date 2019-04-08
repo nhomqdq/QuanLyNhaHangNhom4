@@ -61,7 +61,7 @@
 					<div class="container">
 				  		<div class="row justify-content-center">
 						      <div id="logo">
-						        <a href="Trangchu.html"><img src="img/logo.png" alt="" title="" /></a>
+						        <a href="Trangchu.php"><img src="img/logo.png" alt="" title="" /></a>
 						      </div>
 				  		</div>			  					
 					</div>
@@ -70,14 +70,14 @@
 					<div class="row align-items-center justify-content-center d-flex">			
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li><a href="Trangchu.html">Home</a></li>
-				          <li><a href="Thucdon.html">Thực Đơn</a></li>
-				          <li><a href="NhanVien.html">Nhân Viên</a></li>
-				          <li><a href="Khachhang.html"></a></li>
-				          <li class="Kho"><a href="Kho.html">Kho</a>
+				          <li><a href="Trangchu.php">Home</a></li>
+				          <li><a href="Thucdon.php">Thực Đơn</a></li>
+				          <li><a href="NhanVien.php">Nhân Viên</a></li>
+				         
+				          <li class="Kho"><a href="Kho.php">Kho</a>
 				            <ul>
-				              <li><a href="Nhapkho.html">Nhập Kho</a></li>
-				              <li><a href="Xuatkho.html">Xuất Kho</a></li>
+				              <li><a href="Nhapkho.php">Nhập Kho</a></li>
+				              <li><a href="Xuatkho.php">Xuất Kho</a></li>
 				            </ul>
 				          </li>	
 				          <li class="menu-has-children"><a href="">Quản Lý Bàn</a>
@@ -88,7 +88,7 @@
 						           				                		
 				            </ul>
 				          </li>					          					          		          
-				          <li><a href="contact.html">Hóa Đơn</a></li>
+				          <li><a href="contact.php">Hóa Đơn</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->					      		  
 					</div>
@@ -104,7 +104,7 @@
 							<h1 class="text-white">
 										
 							</h1>	
-							<p class="text-white link-nav"><a href="Trangchu.html"> </a> <a href="NhanVien.html"></a> <a href="Khachhang.html"> </a> <span class="lnr lnr-arrow-right"></span>  <a href="Thucdon.html"</a></p>
+							<p class="text-white link-nav"><a href="Trangchu.php"> </a> <a href="NhanVien.php"></a> <a href="Khachhang.php"> </a> <span class="lnr lnr-arrow-right"></span>  <a href="Thucdon.php"</a></p>
 						</div>	
 					</div>
 				</div>
@@ -117,7 +117,7 @@
         
         <div class="row text-center">
 						
-				    <div class="col-sm-4 item"><img id="anh" src="D:\QLNH\QuanLyNhaHang\img\ganuong.jpg" width="75%" height="250px;">
+				    <div class="col-sm-4 item"><img id="anh" src="C:\xampp\htdocs\QLNH\img\ganuong.jpg" width="75%" height="250px;">
 										 <p>Gà Nướng</p><p style="margin-top:20px;">
 											<button type="button" 
                        id="mua" class="mu" class="btn btn-info btn-lg btn btn-info btn-lg" >

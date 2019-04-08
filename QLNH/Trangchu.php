@@ -4,6 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
+		
 		<link rel="shortcut icon" href="img/fav.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
@@ -36,7 +37,7 @@
 					<div class="container">
 				  		<div class="row justify-content-center">
 						      <div id="logo">
-						        <a href="Hoadon.html"><img src="img/logo.png" alt="" title="" /></a>
+						        <a href="Kho.php"><img src="img/logo.png" alt="" title="" /></a>
 						      </div>
 				  		</div>			  					
 					</div>
@@ -45,17 +46,17 @@
 					<div class="row align-items-center justify-content-center d-flex">			
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li><a href="Trangchu.html">Home</a></li>
-				          <li><a href="Thucdon.html">Thực Đơn</a></li>
-				          <li><a href="NhanVien.html">Nhân Viên</a></li>
-				          <li><a href="Khachhang.html">Khách Hàng</a></li>
-				          <li class="Kho"><a href="Kho.html">Kho</a>
+				          <li><a href="Trangchu.php">Home</a></li>
+				          <li><a href="Thucdon.php">Thực Đơn</a></li>
+				          <li><a href="NhanVien.php">Nhân Viên</a></li>
+				          
+				          <li class="Kho"><a href="Kho.php">Kho</a>
 				            <ul>
-				              <li><a href="Nhapkho.html">Nhập Kho</a></li>
-				              <li><a href="XuatKho.html">Xuất Kho</a></li>
+				              <li><a href="Nhapkho.php">Nhập Kho</a></li>
+				              <li><a href="XuatKho.php">Xuất Kho</a></li>
 				            </ul>
 				          </li>	
-				          <li class="menu-has-children"><a href="">Quản Lý Bàn</a>
+				          <li class="Quanlyban"><a href="">Quản Lý Bàn</a>
 				            <ul>
 											    <li><a href="#">Order</a></li>
 						              <li><a href="#">Đặt Bàn</a></li>
@@ -63,26 +64,26 @@
 						           				                		
 				            </ul>
 				          </li>					          					          		          
-				          <li><a href="Hoadon.html">Hóa Đơn</a></li>
+				          <li><a href="Hoadon.php">Hóa Đơn</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->					      		  
 					</div>
 				</div>
 			</header><!-- #header -->
-	  
+			
 			<!-- start banner Area -->
-			<section class="relative about-banner">	
-				<div class="overlay overlay-bg"></div>
-				<div class="container">				
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="about-content col-lg-12">
-							<h1 class="text-white">
-								Hóa Đơn				
-							</h1>	
-							<p class="text-white link-nav"><a href="Trangchu.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="Hoadon.html"></a> Hóa Đơn</a></p>
-						</div>	
+			<section class="banner-area">		
+				<div class="container">
+					<div class="row fullscreen align-items-center justify-content-between">
+						<div class="col-lg-12 banner-content">
+							<h6 class="text-white" >NHÀ HÀNG</h6>
+							<h1 class="text-white">NUMBERONE</h1>
+							<p class="text-white">
+								Tự hào là nhà hàng có view đẹp, đồ ăn ngon nhất</p>
+							<a href="#" class="primary-btn text-uppercase">Check </a>
+						</div>
 					</div>
-				</div>
+				</div>					
 			</section>
 		
 			<footer class="footer-area">

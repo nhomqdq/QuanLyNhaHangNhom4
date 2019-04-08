@@ -36,7 +36,7 @@
 					<div class="container">
 				  		<div class="row justify-content-center">
 						      <div id="logo">
-						        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+						        <a href="index.php"><img src="img/logo.png" alt="" title="" /></a>
 						      </div>
 				  		</div>			  					
 					</div>
@@ -45,19 +45,19 @@
 					<div class="row align-items-center justify-content-center d-flex">			
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li><a href="index.html">Home</a></li>
-				          <li><a href="about.html">About</a></li>
-				          <li><a href="menu.html">Menu</a></li>
-				          <li><a href="gallery.html">Gallery</a></li>
+				          <li><a href="index.php">Home</a></li>
+				          <li><a href="about.php">About</a></li>
+				          <li><a href="menu.php">Menu</a></li>
+				          <li><a href="gallery.php">Gallery</a></li>
 				          <li class="menu-has-children"><a href="">Blog</a>
 				            <ul>
-				              <li><a href="blog-home.html">Blog Home</a></li>
-				              <li><a href="blog-single.html">Blog Single</a></li>
+				              <li><a href="blog-home.php">Blog Home</a></li>
+				              <li><a href="blog-single.php">Blog Single</a></li>
 				            </ul>
 				          </li>	
 				          <li class="menu-has-children"><a href="">Pages</a>
 				            <ul>
-				            	  <li><a href="elements.html">Elements</a></li>
+				            	  <li><a href="elements.php">Elements</a></li>
 						          <li class="menu-has-children"><a href="">Level 2 </a>
 						            <ul>
 						              <li><a href="#">Item One</a></li>
@@ -66,7 +66,7 @@
 						          </li>					                		
 				            </ul>
 				          </li>					          					          		          
-				          <li><a href="contact.html">Contact</a></li>
+				          <li><a href="contact.php">Contact</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->					      		  
 					</div>
@@ -82,7 +82,7 @@
 							<h1 class="text-white">
 								Blog Details Page				
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span><a href="blog-home.html">Blog </a> <span class="lnr lnr-arrow-right"></span> <a href="blog-single.html"> Blog Details Page</a></p>
+							<p class="text-white link-nav"><a href="index.php">Home </a>  <span class="lnr lnr-arrow-right"></span><a href="blog-home.php">Blog </a> <span class="lnr lnr-arrow-right"></span> <a href="blog-single.php"> Blog Details Page</a></p>
 						</div>	
 					</div>
 				</div>
@@ -333,7 +333,7 @@
 												<img class="img-fluid" src="img/blog/pp1.jpg" alt="">
 											</div>
 											<div class="details">
-												<a href="blog-single.html"><h6>Space The Final Frontier</h6></a>
+												<a href="blog-single.php"><h6>Space The Final Frontier</h6></a>
 												<p>02 Hours ago</p>
 											</div>
 										</div>
@@ -342,7 +342,7 @@
 												<img class="img-fluid" src="img/blog/pp2.jpg" alt="">
 											</div>
 											<div class="details">
-												<a href="blog-single.html"><h6>The Amazing Hubble</h6></a>
+												<a href="blog-single.php"><h6>The Amazing Hubble</h6></a>
 												<p>02 Hours ago</p>
 											</div>
 										</div>
@@ -351,7 +351,7 @@
 												<img class="img-fluid" src="img/blog/pp3.jpg" alt="">
 											</div>
 											<div class="details">
-												<a href="blog-single.html"><h6>Astronomy Or Astrology</h6></a>
+												<a href="blog-single.php"><h6>Astronomy Or Astrology</h6></a>
 												<p>02 Hours ago</p>
 											</div>
 										</div>
@@ -360,7 +360,7 @@
 												<img class="img-fluid" src="img/blog/pp4.jpg" alt="">
 											</div>
 											<div class="details">
-												<a href="blog-single.html"><h6>Asteroids telescope</h6></a>
+												<a href="blog-single.php"><h6>Asteroids telescope</h6></a>
 												<p>02 Hours ago</p>
 											</div>
 										</div>															
