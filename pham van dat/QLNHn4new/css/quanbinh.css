@@ -1,0 +1,21 @@
+
+.row text-center {
+overflow: hidden;
+max-width: 250x;
+max-height:260px;
+
+}
+
+.col-sm-4 item {
+position: relative;
+
+}
+
+img {
+transition: 0.5s ease; 
+}
+
+img:hover {
+transform: scale(1.2);
+}
+
