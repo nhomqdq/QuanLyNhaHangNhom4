@@ -1,127 +1,152 @@
 <!DOCTYPE html>
-<html lang="zxx" class="no-js">
-<head>
-	<!-- Mobile Specific Meta -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Favicon-->
-	<link rel="shortcut icon" href="img/fav.png">
-	<!-- Author Meta -->
-	<meta name="author" content="colorlib">
-	<!-- Meta Description -->
-	<meta name="description" content="">
-	<!-- Meta Keyword -->
-	<meta name="keywords" content="">
-	<!-- meta character set -->
-	<meta charset="UTF-8">
-	<!-- Site Title -->
-	<title>Macro</title>
-
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-		<!--
-		CSS
-		============================================= -->
-		<link rel="stylesheet" href="css/linearicons.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/magnific-popup.css">
-		<link rel="stylesheet" href="css/jquery-ui.css">				
-		<link rel="stylesheet" href="css/nice-select.css">							
-		<link rel="stylesheet" href="css/animate.min.css">
-		<link rel="stylesheet" href="css/owl.carousel.css">				
-		<link rel="stylesheet" href="css/main.css">
-	</head>
-	<body>	
-		<header id="header">
-			<div class="header-top">
-				<div class="container">
-						<div class="row justify-content-center">
-								<div id="logo">
-									<a href="Kho.php"><img src="img/logo.png" alt="" title="" /></a>
-								</div>
-						</div>			  					
-				</div>
-			</div>
-			<div class="container main-menu">
-				<div class="row align-items-center justify-content-center d-flex">			
-						<nav id="nav-menu-container">
-							<ul class="nav-menu">
-								<li><a href="Trangchu.php">Home</a></li>
-								<li><a href="Thucdon.php">Thực Đơn</a></li>
-								<li><a href="NhanVien.php">Nhân Viên</a></li>
-							
-								<li class="menu-has-children"><a href="">Kho</a>
-									<ul>
-										<li><a href="blog-home.php">Nhập Kho</a></li>
-										<li><a href="blog-single.php">Xuất Kho</a></li>
-									</ul>
-								</li>	
-								<li class="menu-has-children"><a href="">Quản Lý Bàn</a>
-									<ul>
-												<li><a href="#">Order</a></li>
-												<li><a href="#">Đặt Bàn</a></li>
-												<li><a href="#">Tình Trạng</a></li>
-																								 
-									</ul>
-								</li>					          					          		          
-								<li><a href="Hoadon.php">Hóa Đơn</a></li>
-							</ul>
-						</nav><!-- #nav-menu-container -->					      		  
-				</div>
-			</div>
-		</header><!-- #header -->
-		
-		<!-- start banner Area -->
-		<section class="about-banner relative">
-			<div class="overlay overlay-bg"></div>
-			<div class="container">				
-				<div class="row d-flex align-items-center justify-content-center">
-					<div class="about-content col-lg-12">
-						<h1 class="text-white">
-							Menus				
-						</h1>	
-						<p class="text-white link-nav"><a href="Trangchu.php"></a>Home </a> <a href="NhanVien.php">Nhân Viên </a> <a href="Thucdon.php">Thực Đơn </a> <span class="lnr lnr-arrow-right"></span>  <a href="Kho.php"> Kho</a></p>
-					</div>	
-				</div>
-			</div>
-			<footer class="footer-area">
-				<div class="footer-widget-wrap">
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Nhân viên</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+			
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="Nhanvien/style.css" />
+			<linK rel="stylesheet" href="css/quabinh.css">
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">				
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">				
+			<link rel="stylesheet" href="css/main.css">
+			<script>    
+        $(document).ready(function(e) {
+            // xlsua
+            $(".btnxoa").click(function(){
+							var id=$(this).attr("stt");
+              $.post("./NhanVien/xoanv.php",{id:id},function(data){
+                alert("đã xóa");
+								location.reload("NhanVien.php");   
+              });
+            });
+						//seach
+						$("#seach").click(function(){
+						var ten=$("#ten").val();
+							//alert("sá");
+              $.post("./NhanVien/listnv.php",{tennv:ten},function(data){
+								$("#listnv").html(data);
+              });
+            });
+        });
+    </script>
+		</head>
+		<body>	
+			<header id="header">
+				<div class="header-top">
 					<div class="container">
-						<div class="row section-gap">
-							<div class="col-lg-4  col-md-6 col-sm-6">
-								<div class="single-footer-widget">
-									<h4>GIỜ MỞ CỬA</h4>
-									<ul class="hr-list">
-										<li class="d-flex justify-content-between">
-											<span>Thứ Hai - Thứ Sáu</span> <span>08.00 am - 10.00 pm</span>
-										</li>
-										<li class="d-flex justify-content-between">
-											<span>Thứ Bảy</span> <span>08.00 am - 10.00 pm</span>
-										</li>
-										<li class="d-flex justify-content-between">
-											<span>Chủ Nhật</span> <span>08.00 am - 10.00 pm</span>
-										</li>																				
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-4  col-md-6 col-sm-6">
-								<div class="single-footer-widget">
-									<h4>Liên Hệ</h4>
-									<p>
-										Địa chỉ: 182 đường Lê Duẩn; Thành phố Vinh, Nghệ An.
-									</p>
-									<p class="number">
-										096969669<br>
+				  		<div class="row justify-content-center">
+						      <div id="logo">
+						        <a href="Trangchu.php"><img src="img/logo.png" alt="" title="" /></a>
+						      </div>
+				  		</div>			  					
+					</div>
+				</div>
+				<div class="container main-menu">
+					<div class="row align-items-center justify-content-center d-flex">			
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li><a href="Trangchu.php">Home</a></li>
+				          <li><a href="Thucdon.php">Thực Đơn</a></li>
+				          <li><a href="NhanVien.php">Nhân Viên</a></li>
+				         
+				          <li class="Kho"><a href="Kho.php">Kho</a>
+				            <ul>
+				              <li><a href="Nhapkho.php">Nhập Kho</a></li>
+				              <li><a href="Xuatkho.php">Xuất Kho</a></li>
+				            </ul>
+				          </li>	
+				          <li class="menu-has-children"><a href="">Quản Lý Bàn</a>
+				            <ul>
+											    <li><a href="#">Order</a></li>
+						              <li><a href="#">Đặt Bàn</a></li>
+						              <li><a href="#">Tình Trạng</a></li>
+						           				                		
+				            </ul>
+				          </li>					          					          		          
+				          <li><a href="contact.php">Hóa Đơn</a></li>
+				        </ul>
+				      </nav><!-- #nav-menu-container -->					      		  
+					</div>
+				</div>
+			</header><!-- #header -->
+			
+			<!-- start banner Area -->
+			<section class="about-banner relative">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">				
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
 										
-									</p>
-								</div>
-							</div>						
-							<div class="col-lg-4  col-md-6 col-sm-6">
-								<div class="single-footer-widget">
-									<h4>Bản tin</h4>
-									<p>Quí khách có thể tin tưởng chúng tôi với những ưu đã tốt nhất cho quí vị.</p>
-									<div class="d-flex flex-row" id="mc_embed_signup">
-
-
+							</h1>	
+							<p class="text-white link-nav"><a href="Trangchu.php"> </a> <a href="NhanVien.php"></a> <a href="Khachhang.php"> </a> <span class="lnr lnr-arrow-right"></span> <a> Quyền Bá hân hạnh tài trợ chương trình này</a></p>
+						</div>	
+					</div>
+				</div>
+			</section>
+				<div>âs</div>
+<footer class="footer-area">
+	<div class="footer-widget-wrap">
+		<div class="container">
+			<div class="row section-gap">
+				<div class="col-lg-4  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h4>GIỜ MỞ CỬA</h4>
+						<ul class="hr-list">
+							<li class="d-flex justify-content-between">
+								<span>Thứ Hai - Thứ Sáu</span> <span>08.00 am - 10.00 pm</span>
+							</li>
+							<li class="d-flex justify-content-between">
+								<span>Thứ Bảy</span> <span>08.00 am - 10.00 pm</span>
+							</li>
+							<li class="d-flex justify-content-between">
+								<span>Chủ Nhật</span> <span>08.00 am - 10.00 pm</span>
+							</li>																				
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h4>Liên Hệ</h4>
+						<p>
+							Địa chỉ: 182 đường Lê Duẩn; Thành phố Vinh, Nghệ An.
+						</p>
+						<p class="number">
+							096969669<br>					
+						</p>
+					</div>
+				</div>						
+				<div class="col-lg-4  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h4>Bản tin</h4>
+						<p>Quí khách có thể tin tưởng chúng tôi với những ưu đã tốt nhất cho quí vị.</p>
+						<div class="d-flex flex-row" id="mc_embed_signup">
 										  <form class="navbar-form" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
 										    <div class="input-group add-on align-items-center d-flex">
 										      	<input class="form-control" name="EMAIL" placeholder="Your Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email address'" required="" type="email">
@@ -144,7 +169,7 @@
 					<div class="container">
 						<div class="row footer-bottom d-flex justify-content-between align-items-center">
 							<p class="col-lg-8 col-mdcol-sm-6 -6 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-EMAIL: &copy;<script>document.write(new Date().getFullYear());</script>nhahang@gmail.com <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Nhà hàng số 1</a>
+EMAIL: &copy;<script>document.write(new Date().getFullYear());</script> nhahang@gmail.com <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Nhà hàng số 1 </a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 							<ul class="col-lg-4 col-mdcol-sm-6 -6 social-icons text-right">
 	                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -173,5 +198,5 @@ EMAIL: &copy;<script>document.write(new Date().getFullYear());</script>nhahang@g
             <script src="js/isotope.pkgd.min.js"></script>								
 			<script src="js/mail-script.js"></script>	
 			<script src="js/main.js"></script>
-	</body>
-</html>
+		</body>
+	</html>
