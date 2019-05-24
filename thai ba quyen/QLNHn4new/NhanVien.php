@@ -85,11 +85,16 @@
 				            <ul>
 											    <li><a href="#">Order</a></li>
 						              <li><a href="#">Đặt Bàn</a></li>
-						              <li><a href="#">Tình Trạng</a></li>
-						           				                		
+						              <li><a href="#">Tình Trạng</a></li>      				                		
 				            </ul>
 				          </li>					          					          		          
 				          <li><a href="contact.php">Hóa Đơn</a></li>
+									<li><a href="#">View Công</a>
+										<ul>
+											<li><a href="./NhanVien/trangchamcong.php">Chấm Công</a></li>
+											<li><a href="./NhanVien/bangcong.php">Xem bảng Công</a></li>
+										</ul>
+									</li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->					      		  
 					</div>
@@ -175,9 +180,6 @@
 						<h4>Bản tin</h4>
 						<p>Quí khách có thể tin tưởng chúng tôi với những ưu đã tốt nhất cho quí vị.</p>
 						<div class="d-flex flex-row" id="mc_embed_signup">
-
-
-
 										  <form class="navbar-form" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
 										    <div class="input-group add-on align-items-center d-flex">
 										      	<input class="form-control" name="EMAIL" placeholder="Your Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email address'" required="" type="email">

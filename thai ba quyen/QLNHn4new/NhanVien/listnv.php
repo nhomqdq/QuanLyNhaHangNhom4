@@ -29,7 +29,7 @@
 					<td>'.$data["hesoluong"].'</td>
 					<td>'.$data["Chucvu"].'</td>
 					<td>'.$data["Ngaybatdau"].'</td>
-					<td><a href="">lương tháng</a></td>
+					<td><a href="NhanVien/luongthang.php">lương tháng</a></td>
 					<td><a href="NhanVien/suanv.php?id='.$data["Manhanvien"].'">sua</a></td>
 					<td><button type="button" stt="'.$data["Manhanvien"].'" class="btnxoa">Xóa</button></td>	
 				</tr>';
@@ -68,7 +68,7 @@
                 <td>'.$data["hesoluong"].'</td>
                 <td>'.$data["Chucvu"].'</td>
                 <td>'.$data["Ngaybatdau"].'</td>
-                <td><a href="">lương tháng</a></td>
+                <td><a href="NhanVien/luongthang.php">lương tháng</a></td>
                 <td><a href="NhanVien/suanv.php?id='.$data["Manhanvien"].'">sua</a></td>
                 <td><button type="button" stt="'.$data["Manhanvien"].'" class="btnxoa">Xóa</button></td>	
             </tr>';
