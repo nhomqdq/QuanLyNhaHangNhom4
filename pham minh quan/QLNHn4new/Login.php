@@ -1,40 +1,125 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>QUẢN LLÝ NHÀ HÀNG</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script>
-
-  </script>
+  <title></title>
+  
+  <meta charset="UTF-8">
+	<style type="text/css">
+		form {
+  box-sizing: border-box;
+  width: 260px;
+  margin: 100px auto 0;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
+  border-radius: 3px;
+}
+form h1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+ 
+input {
+  margin: 40px 25px;
+  width: 200px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #1abc9c;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #0e6252;
+}
+input:focus, input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+  color: #1abc9c;
+  font-size: 11px;
+  transform: translateY(-20px);
+  visibility: visible !important;
+}
+ 
+button {
+  border: none;
+  background: #1abc9c;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 200px;
+  color: white;
+  margin-left: 25px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+	</style>
 </head>
 <body>
 
-  <section class="container">
-    <div class="login">
-      <h1>QUẢN LÝ NHÀ HÀNG</h1>
-      <form method="post" action="Trangchu.php" name="main-form">
-        <p><input id="admin" type="text" name="login" value="admin" placeholder="Username or Email"></p>
-        <p><input type="password" name="password" value="" placeholder="Password"></p>
-        <p class="remember_me">
-          <label>
-            <input type="checkbox" name="remember_me" id="remember_me">
-            Remember me on this computer
-          </label>
-        </p>
-        <p class="submit"><input type="submit" name="commit" value="Login"></p>
-      </form>
-    </div>
+	<form action="" method="post">
+  <?php  
+   function ketnoi(){
+        $servername = "localhost";  
+       $username = "root";  
+       $password = "";  
+       $database="dbmshtquanlynhahangg";
+      
 
-    <div class="login-help">
-      <p>Forgot your password? <a href="Login.php">Click here to reset it</a>.</p>
-    </div>
+       $conn = new mysqli($servername, $username, $password, $database);
+       return $conn;
+      }
+       ?>
   
-  </section>
+    <?php
+                    
+           $conn=ketnoi();
+           
+          
+            
+            if(empty($_POST['username']) or empty($_POST['password']))
+                {
+                   echo '<p style="color:red">Không bỏ trống tài khoản hoặc mật khẩu của bạn</p>';
+                }
+                
+                else{
+                      $username=$_POST['username'];
+                      $password=$_POST['password'];
+                      $sql="select * from login where  username
+                      ='$username' and password='$password'";
+
+                      $query = mysqli_query($conn,$sql);
+                      $num=mysqli_num_rows($query);
+
+                      if($num==0){
+                         echo '<p style="color:red">Tài khoản hoặc mật khẩu của bạn không đúng</p>';
+                      }else{
+                       if("role=2"){
+                      
+                     $_SESSION['username']=$username;
+                        header('location:Trangchu.php');
+                       }
+                       else{
+                        header('location:Quyennhanvien.php');
+                       }
+                        
+                      }
+
+              
+          }
+          ?>
+  <h1>Login</h1>
+
+  <input placeholder="Username" name="username" type="text" required="">
+  <input placeholder="Password" name="password" type="password" required="">
+  <button>Login</button>
+</form>
+
 </body>
-</html>
+</html>>

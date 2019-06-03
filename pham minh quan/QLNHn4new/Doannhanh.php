@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PMQuân</title>
+	<title>Luto Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -49,28 +49,6 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<style>
-					.row text-center {
-				overflow: hidden;
-				max-width: 250x;
-				max-height:260px;
-	
-			}
-	
-			.col-sm-4 item {
-				position: relative;
-	
-			}
-	
-			img {
-				transition: 0.5s ease; 
-			}
-	
-			img:hover {
-				transform: scale(1.2);
-			}
-	
-				</style>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -78,7 +56,8 @@
 
 	</head>
 	<body>
-    <nav id="colorlib-main-nav" role="navigation">
+
+	<nav id="colorlib-main-nav" role="navigation">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
 		<div class="js-fullheight colorlib-table">
 			<div class="colorlib-table-cell js-fullheight">
@@ -92,7 +71,8 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<ul>
+						
+                        <ul>
 							
 							<li><a href="Trangchu.php">Home</a></li>
 				          <li><a href="Thucdon.php">Thực Đơn</a>
@@ -122,6 +102,7 @@
 				          </li>					          					          		          
 				          <li><a href="Hoadon.php">Hóa Đơn</a></li>
 				        </ul>
+						
 						</ul>
 					</div>
 				</div>
@@ -131,23 +112,21 @@
 	
 	<div id="colorlib-page">
 		<header>
-        <div class="container">
+			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="colorlib-navbar-brand">
-							<a class="colorlib-logo" href="index.html"><i class="flaticon-cutlery"></i><span>PM</span><span>Quân</span></a>
+							<a class="colorlib-logo" href="index.html"><i class="flaticon-cutlery"></i><span>Lu</span><span>to</span></a>
 						</div>
 						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 					</div>
 				</div>
 			</div>
-			
 		</header>
 		<aside id="colorlib-hero">
-        <aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	<li style="background-image: url(images/img_bg_1.jpg);">
+			   	<li style="background-image: url(images/img_bg_1.jpg);" data-stellar-background-ratio="0.5">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -155,9 +134,8 @@
 				   				<div class="slider-text-inner text-center">
 				   					<div class="desc">
 				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
-					   					<h1>NHÀ HÀNG &amp; Số 1</h1>
-					   					<p>Chúng tôi tự hào là nhà hàng số một hiện nay.</p>
-					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn"></a></p>
+					   					<h1>Our Menu</h1>
+					   					<p><span><a href="#">Home</a></span> <span>Menu</span></p>
 					   					<div class="desc2"></div>
 				   					</div>
 				   				</div>
@@ -165,153 +143,10 @@
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="background-image: url(images/img_bg_2.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<div class="desc">
-				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
-					   					<h1>NHÀ HÀNG PMQ</h1>
-					   					<p>Với những đầu biết chuyên nghiệp sẽ luôn sẵn sàng phục vụ các bạn.</p>
-					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn"></a></p>
-					   					<div class="desc2"></div>
-					   				</div>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/img_bg_3.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<div class="desc">
-				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
-					   					<h1></h1>
-					   					<p>Sẵn sàng phục vụ là châm ngôn của chung tôi</p>
-					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn"></a></p>
-					   					<div class="desc2"></div>
-					   				</div>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/img_bg_4.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<div class="desc">
-				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
-					   					<h1></h1>
-					   					<p>Cảm ơn các bạn đã ghé thăm</p>
-					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn"></a></p>
-					   					<div class="desc2"></div>
-					   				</div>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>	
 			  	</ul>
-			  	<div class="mouse">
-				   <a href="#" class="mouse-icon">
-				   	<div class="mouse-wheel"></div>
-				   </a>
-				</div>
 		  	</div>
-		
+		</aside>
 
-              <aside id="colorlib-hero">
-			<div class="flexslider">
-				<ul class="slides">
-			   	<li style="background-image: url(images/img_bg_1.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<div class="desc">
-				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
-					   					<h1>NHÀ HÀNG &amp; Số 1</h1>
-					   					<p>Chúng tôi tự hào là nhà hàng số một hiện nay.</p>
-					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn"></a></p>
-					   					<div class="desc2"></div>
-				   					</div>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/img_bg_2.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<div class="desc">
-				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
-					   					<h1>NHÀ HÀNG PMQ</h1>
-					   					<p>Với những đầu biết chuyên nghiệp sẽ luôn sẵn sàng phục vụ các bạn.</p>
-					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn"></a></p>
-					   					<div class="desc2"></div>
-					   				</div>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/img_bg_3.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<div class="desc">
-				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
-					   					<h1></h1>
-					   					<p>Sẵn sàng phục vụ là châm ngôn của chung tôi</p>
-					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn"></a></p>
-					   					<div class="desc2"></div>
-					   				</div>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/img_bg_4.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<div class="desc">
-				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
-					   					<h1></h1>
-					   					<p>Cảm ơn các bạn đã ghé thăm</p>
-					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn"></a></p>
-					   					<div class="desc2"></div>
-					   				</div>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>	
-			  	</ul>
-			  	<div class="mouse">
-				   <a href="#" class="mouse-icon">
-				   	<div class="mouse-wheel"></div>
-				   </a>
-				</div>
-		  	</div>
-        </aside>
-        
 		<div class="colorlib-intro">
 			<div class="container">
 				<div class="row">
@@ -320,8 +155,8 @@
 							<span class="icon">
 								<i class="icon-map4"></i>
 							</span>
-							<h2>Địa Chỉ</h2>
-							<p>1:Lê Duẩn -TP Vinh-Nghệ An</p>
+							<h2>Address</h2>
+							<p>198 West 21th Street, Suite 721 New York NY 10016</p>
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-6 text-center">
@@ -329,8 +164,8 @@
 							<span class="icon">
 								<i class="icon-clock4"></i>
 							</span>
-							<h2>Giờ Mở Cửa</h2>
-							<p>Thứ Hai-Thứ Sáu</p>
+							<h2>Opening Time</h2>
+							<p>Monday - Sunday</p>
 							<span>8am - 9pm</span>
 						</div>
 					</div>
@@ -339,7 +174,7 @@
 							<span class="icon">
 								<i class="icon-mobile2"></i>
 							</span>
-							<h2>Số Điện Thoại</h2>
+							<h2>Phone</h2>
 							<p>+ 001 234 567</p>
 							<p>+ 001 234 567</p>
 						</div>
@@ -350,7 +185,7 @@
 								<i class="icon-envelope"></i>
 							</span>
 							<h2>Email</h2>
-							<p><a href="#">quanbinh15101108@gamil.com</a><br><a href="#">PhamMinhQuan@email.com</a></p>
+							<p><a href="#">info@domain.com</a><br><a href="#">luto@email.com</a></p>
 						</div>
 					</div>
 				</div>
@@ -366,7 +201,7 @@
                          $con=ketnoi();
                          mysqli_set_charset($con, 'UTF8');
 
-						 $sql= "select * from tblMenu ";
+						 $sql= "select * from tblMenu thuoctinh='Doannhanh' ";
 						 $result=$con->query($sql);
 							$str='';
 						 while( $data=$result->fetch_assoc()){
@@ -389,8 +224,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-3 col-pb-sm">
-							<h2>PMQuân</h2>
-							<p>Luôn sẵn sàng phục vụ các bạn.</p>
+							<h2>Lutong Bahay</h2>
+							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind.</p>
 							<p class="colorlib-social-icons">
 								<a href="#"><i class="icon-facebook4"></i></a>
 								<a href="#"><i class="icon-twitter3"></i></a>
@@ -399,26 +234,26 @@
 							</p>
 						</div>
 						<div class="col-md-3 col-pb-sm">
-							<h2> Blog</h2>
+							<h2>Latest Blog</h2>
 							<div class="f-entry">
 								<a href="#" class="featured-img" style="background-image: url(images/dish-5.jpg);"></a>
 								<div class="desc">
-									<span>Tháng 5, 2019</span>
-									<h3><a href="#">Dạy bạn cách nấu</a></h3>
+									<span>May 5, 2018</span>
+									<h3><a href="#">How to cook beef Grilled with potato</a></h3>
 								</div>
 							</div>
 							<div class="f-entry">
 								<a href="#" class="featured-img" style="background-image: url(images/dish-7.jpg);"></a>
 								<div class="desc">
-									<span>Tháng 6, 2019</span>
-									<h3><a href="#">Đầu bếp PM</a></h3>
+									<span>May 5, 2018</span>
+									<h3><a href="#">A Japanese Master Chef</a></h3>
 								</div>
 							</div>
 							<div class="f-entry">
 								<a href="#" class="featured-img" style="background-image: url(images/dessert-3.jpg);"></a>
 								<div class="desc">
-									<span>Tháng 6, 2019</span>
-									<h3><a href="#">Wecom to PM</a></h3>
+									<span>May 5, 2018</span>
+									<h3><a href="#">Special Recipe for this month</a></h3>
 								</div>
 							</div>
 						</div>
@@ -432,8 +267,8 @@
 							</div>
 						</div>
 						<div class="col-md-3 col-pb-sm">
-							<h2>Một sô bài báo đã viết về nhàn hàng</h2>
-							<p>Đây là nơi ăn uống thụ vị cho mọi lứa tuổi</p>
+							<h2>Newsletter</h2>
+							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
 							<div class="subscribe text-center">
 								<div class="form-group">
 									<input type="text" class="form-control text-center" placeholder="Enter Email address">
@@ -446,9 +281,9 @@
 						<div class="col-md-12 text-center">
 							<p>
 								<span class="block">&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Wecom to | PMQuân <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank"></a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --><br></span> 
-								<span class="block">Tự hào nhà hàng <a href="http://unsplash.com/" target="_blank"></a> &amp; Số 1<a href="https://www.pexels.com/" target="_blank"></a></span>
+								<span class="block">Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a> &amp; <a href="https://www.pexels.com/" target="_blank">Pexel</a></span>
 							</p>
 						</div>
 					</div>

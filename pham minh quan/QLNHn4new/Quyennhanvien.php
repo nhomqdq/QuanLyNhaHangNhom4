@@ -53,11 +53,36 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+			
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
+	<script>    
+        $(document).ready(function(e) {
+            // xlsua
+            $(".btnxoa").click(function(){
+							var id=$(this).attr("stt");
+              $.post("./NhanVien/xoanv.php",{id:id},function(data){
+                alert("đã xóa");
+								location.reload("NhanVien.php");   
+              });
+            });
+						//seach
+						$("#seach").click(function(){
+						var ten=$("#ten").val();
+							//alert("sá");
+              $.post("./NhanVien/listnv.php",{tennv:ten},function(data){
+								$("#listnv").html(data);
+              });
+            });
+        });
+    </script>
 
 	</head>
 	<body>
-
-	<nav id="colorlib-main-nav" role="navigation">
+    <nav id="colorlib-main-nav" role="navigation">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
 		<div class="js-fullheight colorlib-table">
 			<div class="colorlib-table-cell js-fullheight">
@@ -100,6 +125,12 @@
 				            </ul>
 				          </li>					          					          		          
 				          <li><a href="Hoadon.php">Hóa Đơn</a></li>
+									<li><a href="#">View Công</a>
+										<ul>
+											<li><a href="./NhanVien/trangchamcong.php">Chấm Công</a></li>
+											<li><a href="./NhanVien/bangcong.php">Xem bảng Công</a></li>
+										</ul>
+									</li>
 				        </ul>
 						</ul>
 					</div>
@@ -110,7 +141,7 @@
 	
 	<div id="colorlib-page">
 		<header>
-			<div class="container">
+        <div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="colorlib-navbar-brand">
@@ -120,8 +151,10 @@
 					</div>
 				</div>
 			</div>
+			
 		</header>
 		<aside id="colorlib-hero">
+        <aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
 			   	<li style="background-image: url(images/img_bg_1.jpg);">
@@ -203,8 +236,92 @@
 				   </a>
 				</div>
 		  	</div>
-		</aside>
+		
 
+              <aside id="colorlib-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url(images/img_bg_1.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<div class="desc">
+				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
+					   					<h1>NHÀ HÀNG &amp; Số 1</h1>
+					   					<p>Chúng tôi tự hào là nhà hàng số một hiện nay.</p>
+					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn"></a></p>
+					   					<div class="desc2"></div>
+				   					</div>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(images/img_bg_2.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<div class="desc">
+				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
+					   					<h1>NHÀ HÀNG PMQ</h1>
+					   					<p>Với những đầu biết chuyên nghiệp sẽ luôn sẵn sàng phục vụ các bạn.</p>
+					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn"></a></p>
+					   					<div class="desc2"></div>
+					   				</div>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(images/img_bg_3.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<div class="desc">
+				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
+					   					<h1></h1>
+					   					<p>Sẵn sàng phục vụ là châm ngôn của chung tôi</p>
+					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn"></a></p>
+					   					<div class="desc2"></div>
+					   				</div>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(images/img_bg_4.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<div class="desc">
+				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
+					   					<h1></h1>
+					   					<p>Cảm ơn các bạn đã ghé thăm</p>
+					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn"></a></p>
+					   					<div class="desc2"></div>
+					   				</div>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>	
+			  	</ul>
+			  	<div class="mouse">
+				   <a href="#" class="mouse-icon">
+				   	<div class="mouse-wheel"></div>
+				   </a>
+				</div>
+		  	</div>
+        </aside>
+        
 		<div class="colorlib-intro">
 			<div class="container">
 				<div class="row">
@@ -250,226 +367,68 @@
 			</div>
 		</div>
 
-		<div class="goto-here"></div>
-
-		<div class="colorlib-about" class="colorlib-light-grey">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5">
-						<div class="row">
-							<div class="about-desc">
-								<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
-									<span>Welcome to PMQuân</span>
-									<h2>Nhà hàng được phát triển bởi PMQ anh sinh năm 1997</h2>
-								</div>
-								<div class="col-md-12 animate-box">
-									<p>Nhà hàng được xây dựng dựa trên thiết kế hiện đại.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-7">
-						<div class="row">
-							<div class="col-md-6 animate-box">
-								<div class="about-img" style="background-image: url(images/about.jpg);">
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="about-img about-img-2" style="background-image: url(images/anh.jpg);">
-								</div>
-							</div>
-						</div>
-					</div>
+		<div>
+            <br>
+            <div class="row text-center">
+            </div>
+				<div class="col-sm-4">
+				
 				</div>
-			</div>
-		</div>
+				</div>
+				<div id="listnv">
+        <table class="table" border="1" style="color: red;">
+		<tr class="danger">
+		<th>HỌ TÊN NHÂN VIÊN </th>
+		<th>NGÀY SINH</th>
+		<th>GIỚI TÍNH</th>
+		<th>ĐỊA CHỈ</th>
+        <th>SỐ ĐIỆN THOẠI </th>
+		<th>MÃ CA</th>
+		<th>HỆ SỐ LƯƠNG</th>
+		<th>CHỨC VỤ</th>
+        <th>NGÀY BẮT ĐẦU</th>
 		
-		<div class="colorlib-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
-						<span class="icon"><i class="flaticon-cutlery"></i></span>
-						<h2>Nhà Hàng Cung Cấp Nhiều Món Ăn Tuyệt Vời Cho Các Bạn</h2>
-						<p>Cuộc sống của bạn sẽ trở nên thú vị hơn.Hãy thưởng thức điều đó</p>
-					</div>
+        <th>MÃ BỘ PHẬN</th>
+	</tr>
+
+	<?php
+	  include("Ketnoi.php");
+      $con=Ketnoi();
+      mysqli_set_charset($con, 'UTF8');
+
+	  $kiemtra="SELECT *FROM tblnhanvien";
+	  $str='';
+      $result=$con->query($kiemtra);
+	  while($data=$result->fetch_assoc()){
+	       $str .='<tr class="info">
+
+	       <td>'.$data["Tennhanvien"].'</td>
+	       <td> '.$data["Ngaysinh"].'</td>
+	       <td>'.$data["Gioitinh"].'</td>
+           <td>'.$data["Diachi"].'</td>
+           <td>'.$data["Sodienthoai"].'</td>
+	       <td>'.$data["Maca"].'</td>
+	       <td>'.$data["hesoluong"].'</td>
+           <td>'.$data["Chucvu"].'</td>
+           <td>'.$data["Ngaybatdau"].'</td>
+         
+           <td>'.$data["Mabophan"].'</td>
+           
+
+	   </tr> ';     
+
+	  
+	} echo $str;   
+
+	?>
+
+	</table>
+               
 				</div>
-				<div class="row">
-					<div class="col-md-4 animate-box">
-						<div class="dish-wrap">
-							<div class="wrap">
-								<div class="dish-img" style="background-image: url(images/dish-1.jpg);"></div>
-								<div class="desc">
-									<h2><a href="#">Sữa chua kem nguyên chất</a></h2>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="dish-wrap">
-							<div class="wrap">
-								<div class="dish-img" style="background-image: url(images/dish-2.jpg);"></div>
-								<div class="desc">
-									<h2><a href="#">Pizza với khẩu vị tuyệt vời</a></h2>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="dish-wrap">
-							<div class="wrap">
-								<div class="dish-img" style="background-image: url(images/dish-3.jpg);"></div>
-								<div class="desc">
-									<h2><a href="#">Món bò bít tét chua cay</a></h2>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
-
-		<div class="colorlib-introduction" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 col-md-push-3">
-						<div class="intro-box animate-box">
-							<h2><a href="#">Những thứ bạn thích</a></h2>
-							<p>Bạn có thể tìm thấy chúng ở nhà hàng chúng tôi.</p>
-							<p><a href="https://vimeo.com/channels/staffpicks/93951774" class="btn btn-primary btn-lg btn-outline popup-vimeo"><i class="icon-play3"></i> Watch Video</a></p>
-						</div>
-					</div>
 				</div>
-			</div>
-		</div>
-
-		
-
-		
-
-		
-
-		<div class="colorlib-reservation reservation-img" style="background-image: url(images/cover_bg_2.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
-						<h2>Nhà Hàng PMQuân</h2>
-						<p>Bạn có thể đặt bàn tại đây</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<div class="row">
-							<div class="col-md-12">
-								<form method="post" class="colorlib-form">
-				              	<div class="row">
-										<div class="col-md-6 animate-box">
-											<div class="form-group">
-												<label for="name">Fullname</label>
-												<div class="form-field">
-													<input type="text" class="form-control" placeholder="name">
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6 animate-box">
-											<div class="form-group">
-												<label for="email">Email</label>
-												<div class="form-field">
-													<input type="text" class="form-control" placeholder="email">
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6 animate-box">
-											<div class="form-group">
-												<label for="phone">Phone</label>
-												<div class="form-field">
-													<input type="text" class="form-control" placeholder="phone">
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6 animate-box">
-											<div class="form-group">
-												<label for="date">Date:</label>
-												<div class="form-field">
-													<i class="icon icon-calendar2"></i>
-													<input type="text" id="date" class="form-control date" placeholder="Date">
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6 animate-box">
-											<div class="form-group">
-												<label for="time">Time</label>
-												<div class="form-field">
-													<i class="icon icon-arrow-down3"></i>
-													<select name="time" id="time" class="form-control">
-														<option value="#">6:30am</option>
-														<option value="#">7:00am</option>
-														<option value="#">7:30am</option>
-														<option value="#">8:00am</option>
-														<option value="#">8:30am</option>
-														<option value="#">9:00am</option>
-														<option value="#">9:30am</option>
-														<option value="#">10:00am</option>
-														<option value="#">10:30am</option>
-														<option value="#">11:00am</option>
-														<option value="#">11:30am</option>
-														<option value="#">12:00am</option>
-														<option value="#">12:30am</option>
-														<option value="#">1:00pm</option>
-														<option value="#">1:30pm</option>
-														<option value="#">2:00pm</option>
-														<option value="#">2:30pm</option>
-														<option value="#">3:00pm</option>
-														<option value="#">3:30pm</option>
-														<option value="#">4:00pm</option>
-														<option value="#">4:30pm</option>
-														<option value="#">5:00pm</option>
-														<option value="#">5:30pm</option>
-														<option value="#">6:00pm</option>
-														<option value="#">6:30pm</option>
-														<option value="#">7:00pm</option>
-														<option value="#">7:30pm</option>
-														<option value="#">8:00pm</option>
-														<option value="#">8:30pm</option>
-														<option value="#">9:00pm</option>
-														<option value="#">9:30pm</option>
-														<option value="#">10:00pm</option>
-														<option value="#">10:30pm</option>
-													</select>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6 animate-box">
-											<div class="form-group">
-												<label for="person">Person</label>
-												<div class="form-field">
-													<i class="icon icon-arrow-down3"></i>
-													<select name="people" id="people" class="form-control">
-														<option value="#">1</option>
-														<option value="#">2</option>
-														<option value="#">3</option>
-														<option value="#">4</option>
-														<option value="#">5+</option>
-													</select>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-12 animate-box">
-											<div class="row">
-												<div class="col-md-4 col-md-offset-4">
-													<input type="submit" name="submit" id="submit" value="" class="btn btn-primary btn-block">
-												</div>
-											</div>
-										</div>
-									</div>
-				            </form>
-			           	</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+        </div>
+        <div>
 
 		<footer>
 			<div id="footer">
