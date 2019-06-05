@@ -1,0 +1,13 @@
+<?php
+    $ban=$_POST["ban"];
+    $ban='ban'.$ban;
+    $manon=$_POST["mamon"];
+    $gia=$_POST["gia"];
+    session_start();
+    if(isset($_SESSION["car"]["$ban"])){     
+        $_SESSION["car"]["$ban"][]=array('mamon'=>$manon,'gia'=>$gia);
+    }
+    else{
+        $_SESSION["car"]["$ban"][]=array('mamon'=>$manon,'gia'=>$gia);
+    }
+?>

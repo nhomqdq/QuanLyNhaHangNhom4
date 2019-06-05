@@ -80,8 +80,9 @@ button:hover {
     <?php
                     
            $conn=ketnoi();
-           
-          
+           if(isset($_POST['nhanvien']))
+           {
+         
             
             if(empty($_POST['username']) or empty($_POST['password']))
                 {
@@ -100,17 +101,15 @@ button:hover {
                       if($num==0){
                          echo '<p style="color:red">Tài khoản hoặc mật khẩu của bạn không đúng</p>';
                       }else{
-                       if("role=2"){
+                       
                       
                      $_SESSION['username']=$username;
-                        header('location:Trangchu.php');
-                       }
-                       else{
                         header('location:Quyennhanvien.php');
-                       }
                         
                       }
 
+
+                    }
               
           }
           ?>
@@ -118,7 +117,7 @@ button:hover {
 
   <input placeholder="Username" name="username" type="text" required="">
   <input placeholder="Password" name="password" type="password" required="">
-  <button>Login</button>
+  <button name="nhanvien">Login</button>
 </form>
 
 </body>

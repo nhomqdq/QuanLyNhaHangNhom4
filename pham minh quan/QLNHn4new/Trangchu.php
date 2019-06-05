@@ -1,9 +1,11 @@
+<?php
+session_start();?>
 <!DOCTYPE HTML>
 <html>
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PMQuân</title>
+	<title>PMQ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -114,7 +116,17 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="colorlib-navbar-brand">
-							<a class="colorlib-logo" href="index.html"><i class="flaticon-cutlery"></i><span>PM</span><span>Quân</span></a>
+						<?php 
+ 
+ if (isset($_SESSION['username']) && $_SESSION['username']){
+		
+		 echo ' <a href="logout.php">ĐĂNG XUẤT TRANG</a>';
+ }
+ else{
+		 echo 'Bạn chưa đăng nhập';
+ }
+ ?>
+							<a class="colorlib-logo" href="Trangchu.html"><i class="flaticon-cutlery"></i><span>PM</span><span>Q</span></a>
 						</div>
 						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 					</div>
@@ -259,8 +271,8 @@
 						<div class="row">
 							<div class="about-desc">
 								<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
-									<span>Welcome to PMQuân</span>
-									<h2>Nhà hàng được phát triển bởi PMQ anh sinh năm 1997</h2>
+									<span>Welcome to PMQ</span>
+									<h2>Nhà hàng được phát triển bởi PMQ</h2>
 								</div>
 								<div class="col-md-12 animate-box">
 									<p>Nhà hàng được xây dựng dựa trên thiết kế hiện đại.</p>
@@ -336,25 +348,21 @@
 						<div class="intro-box animate-box">
 							<h2><a href="#">Những thứ bạn thích</a></h2>
 							<p>Bạn có thể tìm thấy chúng ở nhà hàng chúng tôi.</p>
-							<p><a href="https://vimeo.com/channels/staffpicks/93951774" class="btn btn-primary btn-lg btn-outline popup-vimeo"><i class="icon-play3"></i> Watch Video</a></p>
+							<p><a href="" class="btn btn-primary btn-lg btn-outline popup-vimeo"><i class="icon-play3"></i>Liên Hệ</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		
 
-		
-
-		
 
 		<div class="colorlib-reservation reservation-img" style="background-image: url(images/cover_bg_2.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
-						<h2>Nhà Hàng PMQuân</h2>
+						<h2>Nhà Hàng PMQ</h2>
 						<p>Bạn có thể đặt bàn tại đây</p>
 					</div>
 				</div>
@@ -458,6 +466,8 @@
 										<div class="col-md-12 animate-box">
 											<div class="row">
 												<div class="col-md-4 col-md-offset-4">
+											
+
 													<input type="submit" name="submit" id="submit" value="" class="btn btn-primary btn-block">
 												</div>
 											</div>
@@ -476,7 +486,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-3 col-pb-sm">
-							<h2>PMQuân</h2>
+							<h2>PMQ</h2>
 							<p>Luôn sẵn sàng phục vụ các bạn.</p>
 							<p class="colorlib-social-icons">
 								<a href="#"><i class="icon-facebook4"></i></a>
@@ -533,7 +543,7 @@
 						<div class="col-md-12 text-center">
 							<p>
 								<span class="block">&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Wecom to | PMQuân <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank"></a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Wecom to | PMQ <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank"></a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --><br></span> 
 								<span class="block">Tự hào nhà hàng <a href="http://unsplash.com/" target="_blank"></a> &amp; Số 1<a href="https://www.pexels.com/" target="_blank"></a></span>
 							</p>

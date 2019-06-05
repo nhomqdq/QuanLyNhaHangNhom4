@@ -1,0 +1,67 @@
+table,tr,th,td{
+    border: 1px black solid;
+    border-radius: 10px 10px;
+    -webkit-border-radius: 10px 10px;
+    -moz-border-radius: 10px 10px;
+    -ms-border-radius: 10px 10px;
+    -o-border-radius: 10px 10px;
+}
+th,td{
+    width:10%;
+}
+#bordernv{
+    width: 1080px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+table{
+    width: 100%;
+}
+#bdkhung{
+    width: 600px;
+    border-radius: 20px 20px;
+    -webkit-border-radius: 20px 20px;
+    -moz-border-radius: 20px 20px;
+    -ms-border-radius: 20px 20px;
+    -o-border-radius: 20px 20px;
+    font-family: 'Schoolbell', cursive;
+    text-align: center;
+    background-color: darkgoldenrod;
+    color: chartreuse;
+}
+#bdkhung table {
+    text-align: center;
+}
+#tieude{
+    width: 800px;
+    margin: 0px auto;
+}
+h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+a{
+    text-decoration: none;
+}
+input{ 
+    width: 200px;
+    border-radius: 10px 10px;
+    -webkit-border-radius: 10px 10px;
+    -moz-border-radius: 10px 10px;
+    -ms-border-radius: 10px 10px;
+    -o-border-radius: 10px 10px;
+    font-family: 'Schoolbell', cursive;
+    text-align: center;
+}
+select{
+    font-family: 'Schoolbell', cursive;
+    border-radius:5px 5px ;
+    -webkit-border-radius:5px 5px ;
+    -moz-border-radius:5px 5px ;
+    -ms-border-radius:5px 5px ;
+    -o-border-radius:5px 5px ;
+}
+#gt input{
+    width: 60px;
+}
