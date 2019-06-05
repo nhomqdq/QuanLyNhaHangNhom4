@@ -83,7 +83,7 @@
 				          <li><a href="contact.php">Hóa Đơn</a></li>
 									<li><a href="#">View Công</a>
 										<ul>
-											<li><a href="./chamcong.php#">Chấm Công</a></li>
+											<li><a href="../NhanVien/trangchamcong.php">Chấm Công</a></li>
 											<li><a href="./bangcong.php">Xem bảng Công</a></li>
 										</ul>
 									</li>

@@ -1,7 +1,9 @@
-<?php
+﻿<?php
     if(!isset($_POST["tennv"])){
         require("connect.php");
         $con=connect();  
+
+    	mysqli_set_charset($con, 'UTF8');
 		$str1='<table class="table table-striped">
 				<tr>
 					<th scope="col">tên</th>
@@ -56,6 +58,8 @@
             $ten=$_POST["tennv"];
             include("../connect.php");
             $con=connect();
+
+            mysqli_set_charset($con,'UTF8');
             $result=$con->query("select * from tblnhanvien where Tennhanvien like'%$ten%'");
             while($data = $result->fetch_assoc()){
                 $str1 .='<tr>
