@@ -40,16 +40,16 @@
             // xlsua
             $(".btnxoa").click(function(){
 							var id=$(this).attr("stt");
-              $.post("./NhanVien/xoanv.php",{id:id},function(data){
+              $.post("xoa.php",{id:id},function(data){
                 alert("đã xóa");
-								location.reload("NhanVien.php");   
+								location.reload("Kho.php");   
               });
             });
 						//seach
 						$("#seach").click(function(){
 						var ten=$("#ten").val();
 							//alert("sá");
-              $.post("./NhanVien/listnv.php",{tennv:ten},function(data){
+              $.post("listkho.php",{tennv:ten},function(data){
 								$("#listnv").html(data);
               });
             });
@@ -105,7 +105,7 @@
 							<h1 class="text-white">
 										
 							</h1>	
-							<p class="text-white link-nav"><a href="Trangchu.php"> </a> <a href="NhanVien.php"></a> <a href="Khachhang.php"> </a> <span class="lnr lnr-arrow-right"></span> <a> Quyền Bá hân hạnh tài trợ chương trình này</a></p>
+							<p class="text-white link-nav"><a href="Trangchu.php"> </a> <a href="NhanVien.php"></a> <a href="Khachhang.php"> </a> <span class="lnr lnr-arrow-right"></span> <a> </a></p>
 						</div>	
 					</div>
 				</div>
@@ -129,12 +129,12 @@
     </form>
 				</div>
 				<div class="col-sm-4">
-				<h3 style="padding-top:10px;"><a href="NhanVien/themnv.php">Thêm N/V</a></h3>
+				
 				</div>
 				</div>
 				<div id="listnv">
 				<?php
-					include("./NhanVien/listnv.php");
+					include("listkho.php");
 				?>
 				</div>
 		</div>

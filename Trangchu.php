@@ -52,7 +52,7 @@
 				          
 				          <li class="Kho"><a href="Kho.php">Kho</a>
 				            <ul>
-				              <li><a href="Nhapkho.php">Nhập Kho</a></li>
+				              <li><a href="ThemKho.php">Nhập Kho</a></li>
 				              <li><a href="XuatKho.php">Xuất Kho</a></li>
 				            </ul>
 				          </li>	

@@ -83,7 +83,7 @@
 				         
 				          <li class="Kho"><a href="Kho.php">Kho</a>
 				            <ul>
-				              <li><a href="Nhapkho.php">Nhập Kho</a></li>
+				              <li><a href="Themkho.php">Nhập Kho</a></li>
 				              <liu><a href="Xuatkho.php">Xuất Kho</a></li>
 				            </ul>
 				          </li>	h
@@ -108,9 +108,9 @@
 				<div class="container">				
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
-							<h1 classà"text-white">
-									la	
-							</h1>ỏ 
+							<h1 class="text-white">
+										
+							</h1>
 							<p class="text-white link-nav"><a href="Trangchu.php"> </a> <a href="NhanVien.php"></a> <a href="Khachhang.php"> </a> <span class="lnr lnr-arrow-right"></span>  </a></p>
 						</div>	
 					</div>
@@ -135,7 +135,9 @@
 					<th>Số Lượng</th>
 					<th>Gía</th>   
 					<th>Ngày</th>
+					<th>Công ty</th>
 					<th>Tên Hàng Hóa</th>
+					<th>Thành tiền </th>
 					
 				</tr>
 		
@@ -145,7 +147,7 @@
 			$con=ketnoi();
 			$str='';
 		   mysqli_set_charset($con,'UTF8');
-			$sql= "select nk.Mahanghoa, nk.Manhacungcap,nk.mota,nk.Soluong,nk.Gia,nk.Ngay,k.Tenhanghoa from tblkho k inner join tblnhapkho nk on k.Mahanghoa =nk.Mahanghoa  inner join tblnhacungcap nc on nc.Manhacungcap=nk.Manhacungcap ";
+			$sql= "SELECT  tblkho.Mahanghoa,tblnhacungcap.Manhacungcap,tblnhapkho.Mota,tblnhapkho.Soluong,tblnhapkho.Gia,tblnhapkho.Ngay,tblkho.Tenhanghoa,tblnhacungcap.Congty,(tblnhapkho.Soluong*tblnhapkho.Gia) AS Thanhtien from tblnhapkho join tblnhacungcap on tblnhacungcap.Manhacungcap = tblnhapkho.Manhacungcap join tblkho on tblkho.Mahanghoa=tblnhapkho.Mahanghoa ";
 			$result=$con->query($sql);
 			
 			 while($data=$result->fetch_assoc()){
@@ -154,12 +156,14 @@
 					   
 					    <td>'.$data['Mahanghoa'].'</td>
 						<td>'.$data['Manhacungcap'].'</td>
-						<td>'.$data['mota'].'</td>
+						<td>'.$data['Mota'].'</td>
 						<td>'.$data['Soluong'].'</td>
 						 <td>'.$data['Gia'].'</td>
 						 <td>'.$data['Ngay'].'</td>
 						  <td>'.$data['Tenhanghoa'].'</td>
-					   <td><a href="Suakho.php?id='.$data["Mahanghoa"].'">chi tiet</a></td>
+						  <td>'.$data['Congty'].'</td>	
+					  	 <td>'.$data['Thanhtien'].'</td>
+					   <td><a href="Suakho.php">chi tiet</a></td>
 					   </td>
 					  
 				        </tr>';
